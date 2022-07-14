@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <link rel="icon" href="img/246x0w-200x200-1.png" type="image/x-icon" >
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Sharp">
+    <title>Form Log in</title>
+    <link rel="stylesheet" href="assets/css/LogIn.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span>Đăng nhập tài khoản</span>
+        </header>
+        <main class="main">        
+            <label for="email" class="label">
+                <i class="ti-email"></i>
+                Email:
+            </label>
+            <input type="email" id="email-log-in" name="input" class="input input-email" placeholder="Enter your email">
+    
+            <label for="password" class="label">
+                <i class="ti-eye"></i>
+                Mật khẩu:
+            </label>
+            <input type="password" id="password-log-in" name="input" class="input input-pass" placeholder="Enter your password">
+            <a href="#" title="forgot-pass">Forgot password?</a>
+            <div class="log-in">
+                <button id="log-in-btn" class="js-log-in-btn" onclick="checkInfo()">Đăng nhập</button>
+            </div>
+            <div class="text-check-user">
+                <span>Không có tài khoản? <a href="index.html" title="create-account" target="_blank">Tạo tài khoản!</a></span>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="assets/js/logIn.js"></script>
+    <!-- <script src="assets/js/style.js"></script> -->
+</body>
+</html>

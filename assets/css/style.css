@@ -1,0 +1,796 @@
+/* RESET CSS */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.width-900{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.center-tb{
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.line{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.line-1{
+    flex: 20%;
+    border-bottom: 3px solid #9f224e;
+}
+
+.line-2{
+    flex: 70%;
+    margin-left: 16px;
+    border-bottom: 3px solid #ccc;
+}
+
+/* ===================== HEADER ====================== */
+header{
+    height: 50px;
+}
+
+header img{
+    width: 150px;
+    height: 28px;
+    margin: 11px;
+    user-select: none;
+}
+
+#clock{    
+    position: absolute;
+    margin: 10px 16px 15px 50px;
+    display: inline;
+    width: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+}
+
+header .right{
+    float: right;
+    display: flex;
+    margin: 11.4px;
+}
+
+header a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #757577;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-right: 16px;
+    border-radius: 3px;
+}
+
+header a:hover{
+    color: #fff;
+    background: #9f224e;
+}
+
+.log-in-btn,
+.reg-btn{
+    font-size: 13px;
+    color: #757577;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-right: 16px;
+    border-radius: 3px;
+}
+
+.log-in-btn:hover,
+.reg-btn:hover{
+    color: #fff;
+    background: #9f224e;
+    cursor: pointer;
+}
+
+
+.QT{
+    border-right: 1px solid #ccc;
+    margin: 0 16px 0 0;
+}
+
+header input{
+    padding: 3.3px 25px 3.3px 15px;
+    width: 150px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search{
+    position: relative;
+}
+
+.search .btn-search{
+    position: absolute;
+    height: 15px;
+    right: 10px;
+    top: 7px;
+    border: none;
+    background: #fff;
+    color: #535353;
+}
+
+.search .btn-search:hover{
+    cursor: pointer;
+    color: #ccc;
+}
+
+.search .btn-search span{
+    font-size: 15px;
+}
+
+
+/* ===================== NAVIGATION HEAD ====================== */
+.nav-head{
+    background: #932048;
+}
+
+.list-nav{
+    list-style: none;
+}
+
+.home-btn span{
+    color: #fff;
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+
+.list-nav a{
+    line-height: 50px;
+    padding: 0 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.home-btn:hover,
+.list-nav > li:hover{
+    cursor: pointer;
+    background: #5f142f;
+}
+
+
+/* ===================== MAIN ====================== */
+main{
+    background: #ccc;
+}
+.list-sub h3:hover,
+.main-news h1:hover{
+    cursor: pointer;
+    color: #087cce;
+}
+
+            /* ============= section 1 ============ */
+.top-story{
+    margin-top: 30px;
+}
+
+.top-story .container{
+    height: 400px;
+    display: flex;
+}
+
+.top-story .container .col-left{
+    flex: 65%;
+    background: #fff;
+}
+
+.top-story .container .col-right{
+    flex: 35%;
+    background: #fff;
+}
+
+                    /* ==== col-left ==== */
+/* Main news */
+.col-left .main-news{
+    height: 200px;
+    background: #f7f7f7;
+    box-shadow: #000;
+}
+
+.main-news {
+    display: flex;
+}
+.main-news img{
+    width: 333px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-news h1{
+    margin: 8px 12px;
+    font-size: 18px;
+}
+
+.main-news .describe{
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.noiDungChinh .describe span{
+    text-transform: uppercase;
+    color: #757577;
+}
+
+/* Sub news */
+.sub-news{
+    margin-top: 16px;
+}
+
+.list-sub{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-news li{
+    list-style: none;
+    width: 180px;
+}
+
+.sub-news li h3{
+    font-size: 11px;
+}
+
+
+.sub-news img{
+    cursor: pointer;
+    width: 180px;
+}
+
+                    /* ==== col-right aside ==== */
+table,tr,th,td{
+    border-bottom: 2px solid #ccc;
+    border-collapse: collapse;
+    padding: 5px 7px;
+}
+
+table{
+    font-size: 14px;
+    float: right;
+    user-select: none;
+}
+
+th{
+    background: #ccc;
+}
+
+tr:nth-child(7){
+    background: #ee558b;
+    color: #fff;
+}
+
+table caption{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table .flag{
+    width: 20px;
+    margin-right: 10px;
+}
+
+            /* ============= section 2 ============ */
+
+/* News */
+.down-story{
+    background: #fff;
+}
+
+.down-story a{
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.content-news{
+    display: flex;
+}
+
+.news-first{
+    float: left;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.news-first img{
+    width: 198px;
+    object-fit: contain;
+}
+
+.news-first h3{
+    width: 198px;
+    padding: 5px;
+}
+
+.content-news .sub-news{
+    margin: 0;
+    float: left;
+    width: 700px;
+}
+
+.content-news .sub-news li{
+    width: 150px;
+}
+
+.content-news .sub-news li:first-child{
+    margin-left: 23px;
+}
+
+.content-news .sub-news img,
+.content-news .sub-news h3{
+    width: 150px;
+}
+
+.content-news .news-first img:hover{
+    cursor: pointer;
+}
+
+.content-news .news-first h3:hover,
+.content-news .sub-news h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content-news p{
+    width: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    padding-top: 5px;
+    margin-bottom: 16px;
+}
+
+.content-news p:hover{
+    cursor: pointer;
+}
+
+/* Life */
+.news-first h2{
+    padding: 10px;
+    font-size: 17px;
+}
+
+.news-first h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.news-first .p-life{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.news-life{
+    border: none;
+    background: #f6f6f6;
+}
+
+/* ===================== FOOTER ====================== */
+footer{
+    max-width: 900px;
+    margin: 10px auto 0 auto;
+}
+
+.footer{
+    background: #ccc;
+    margin: 0 auto;
+}
+
+.container-footer{
+    display: flex;
+}
+
+.col-menu-footer a{
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 15px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.col-menu-footer a:last-child{
+    margin-right: 150px;
+    padding-right: 15px;
+}
+
+.col-menu-ft-right{
+    border-left: 1px solid gray;
+    display: flex;
+}
+
+.contact span{
+    display: block;
+    font-size: 12px;
+    padding: 7px 25px;
+}
+
+.download>span{
+    font-size: 12px;
+    height: 15px;
+    margin-left: 25px;
+}
+
+.download a{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.app{
+    display: flex;
+    margin-top: 20px;
+}
+
+.apple-app{
+    display: block;
+    width: 90px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.android-app{
+    width: 90px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.qr-code{
+    width: 53px;
+    height: 53px;
+}
+
+.sub-footer{
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-between;
+}
+
+.col-right-ft p{
+    float: right;
+}
+
+.font-10{
+    font-size: 10px;
+}
+
+
+/* ==================== MODAL ====================== */
+.modal-log-in,
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-log-in.open,
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    border: 5px;
+    background: #fff;
+    width: 500px;
+    max-width: calc(100% - 32px); /*Để khi thu nhỏ trình duyệt thi luôn cách 2 bên 16px*/
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+header.modal-header {
+    background: #932048;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    background: #ccc;
+    color: #000;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+.check-password{
+    margin-top: -30px;
+    padding: 15px;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#log-in-btn,
+#register-btn{
+    background: #932048;
+    border: none;
+    color: #fff;
+    width: 50%;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 2px 2px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.log-in{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#register-btn:hover,
+#log-in-btn:hover{
+    opacity: 0.9;
+}
+
+.check-password span{
+    font-size: 15px;
+}
+
+/* hình ảnh tĩnh */
+@keyframes modalFadeIn {
+    from {
+        /* Ban đầu ở phía trên đỉnh */
+        opacity: 0.5;
+        transform: translateY(-150px);
+    }
+
+    to {
+        /* Lúc sau tụt về giữa */
+        transform: translateY(0);
+
+    }
+}
+
+
+/* ============ Resposive ==================*/
+/* IPad */
+@media (max-width: 800px) and (min-width:600px)
+{
+
+    .line{
+        padding: 10px 16px 0 16px;
+    }
+    /* ===================== HEADER ====================== */
+    #clock{
+        margin: 10px 16px 15px 80px;
+    }
+    /* ===================== NAVIGATION HEAD ====================== */
+    .nav-head{
+        width: 100%;
+        font-size: 15px;
+    }
+    .list-nav li{
+        line-height: 40px;
+    }
+    .list-nav a{
+        font-size: 13px;
+        padding: 0 16px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    /* ======= MAIN col left ====== */
+    .top-story .container .col-left{
+        padding-left: 16px;
+        max-width: 357px ;
+        background: #fff;
+    }
+    .col-left .main-news{
+        height: 350px;
+        background: #f7f7f7;
+        box-shadow: #000;
+    }
+    
+    .main-news{
+        display: block;
+    }
+    .main-news img{
+        margin: 5px;
+        width: 333px;
+        height: 200px;
+        cursor: pointer;
+    }
+    
+    .main-news h1{
+        width: 315px;
+        padding: 0;
+        font-size: 18px;
+    }
+    
+    .main-news .describe{
+        width: 315px;
+        font-size: 14px;
+    }
+    
+    .top-story .container .col-right {
+        background: #fff;
+        padding-right: 20px ;
+    }
+
+    /* Sub news */
+    .col-left .sub-news{
+        display: none;
+    }
+    .down-story{
+        display: block;
+        padding: 0 16px;
+    }
+    .content-news{
+        height: 300px;
+    }
+
+    .content-news .news-first{
+        width: 175px;
+        height: 250px;
+    }
+    .content-news .news-first img,
+    .content-news .news-first h3{
+        width: 175px;
+    }
+    
+    .content-news .sub-news{
+        width: calc(100%-175px);
+    }
+
+    .content-news .sub-news .list-sub li,
+    .content-news .sub-news .list-sub li img,
+    .content-news .sub-news .list-sub li h3,
+    .content-news .sub-news .list-sub li p{
+        width: 120px;
+    }
+
+    .col-menu-footer a:last-child {
+        margin-right: 10px;
+    }
+
+    .sub-footer .col-left-ft{
+        margin-left: 16px;
+    }
+
+    .sub-footer .col-right-ft{
+        margin-right: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 599px)
+{
+    header #clock,
+    header .container a,
+    header .container .QT,
+    .nav-head .home-btn{
+        display:  none;
+    }
+
+    .nav-head{
+        display: none;
+    }
+    .top-story .container .col-left{
+        padding-left: 16px;
+        max-width: 357px ;
+        background: #fff;
+    }
+    .col-left .main-news{
+        height: 355px;
+        background: #f7f7f7;
+        box-shadow: #000;
+    }
+    
+    .main-news article{
+        display: block;
+    }
+    .main-news img{
+        margin: 5px;
+        width: 315px;
+        height: 200px;
+        cursor: pointer;
+    }
+    
+    .main-news h1{
+        width: 300px;
+        padding: 0;
+        font-size: 18px;
+    }
+    
+    .main-news .describe{
+        width: 300px;
+        font-size: 14px;
+    }
+    
+    .noiDungChinh .describe span{
+        text-transform: uppercase;
+        color: #757577;
+    }
+
+    .top-story .container .col-left{
+        padding-left: 32px;
+    }
+
+    .container .sub-news,
+    .top-story .container .col-right .fifa-rank{
+        display: none;
+    }
+
+    .down-story {
+        display: block;
+    }
+    .down-story .sub-news .list-sub{
+        display: block;
+        margin-left: 16px;
+    }
+
+
+}

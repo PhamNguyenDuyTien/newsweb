@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+        <title>VnExpress</title>
+        <link rel="icon" href="img/246x0w-200x200-1.png" type="image/x-icon" >
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Sharp" />
+        <meta name="author" content="Phạm Nguyễn Duy Tiến">
+    </head>
+    <body onload="realTime()">
+        <div class="main-content">
+        <!-- =================== HEADER ===================== -->
+            <header class="width-900">
+                <div class="container">
+                    <img src="./img/logo_vne.png" alt="vnexpress">
+                    <div id="clock"></div>
+                    <div class="right">
+                        <a href="#" title="latest">Mới nhất</a>
+                        <a href="#" title="International">Quốc tế</a>
+                        <button class="reg-btn js-reg-btn">Đăng ký</button>
+                        <button class="log-in-btn js-log-in-btn">Đăng nhập</button>
+                        <div class="QT"></div>
+                        <div class="search">
+                            <form>
+                                <input type="text" class="search-input" placeholder="Tìm kiếm ...">
+                                <button type="submit" class="btn-search">
+                                    <span class="material-symbols-sharp">search</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header> 
+            <div class="content width-900">
+                <div class="nav-head">
+                    <ul class="list-nav center">
+                        <li class="home-btn">
+                            <span class="material-symbols-sharp">home</span>
+                        </li>
+                        <li><a href="#" title="thoisu">Thời sự</a></li>
+                        <li><a href="#" title="thegioi">Thế giới</a></li>
+                        <li><a href="#" title="kinhdoanh">Kinh doanh</a></li>
+                        <li><a href="#" title="khoahoc">Khoa học</a></li>
+                        <li><a href="#" title="giaitri">Giải trí</a></li>
+                        <li><a href="#" title="thethao">Thể thao</a></li>
+                        <li><a href="#" title="giaoduc">Giáo dục</a></li>
+                        <li><a href="#" title="suckhoe">Sức khỏe</a></li>
+                    </ul>
+                </div>
+    
+            <!-- =================== MAIN ===================== -->
+                <main>
+                    <section class="top-story">
+                        <div class="container">
+                            <div class="col-left">
+                                <article class="main-news">
+                                    <div class="image">
+                                        <img src="./img/kylianMbappe.jpg" alt="Mbappe">
+                                    </div>
+                                    <div class="noiDungChinh justify">
+                                        <h1>Mbappe giúp PSG vượt mốc 100 bàn mùa này</h1>
+                                        <p class="describe"><span>Pháp</span> - Nhờ 2 bàn và 1 kiến tạo của
+                                                                                Kylian Mbappe trong trận hòa Strasbourg 3-3 
+                                                                                tại League 1, PSG vượt mốc ghi 100 bàn
+                                                                                trên mọi mặt trận.</p>
+                                    </div>
+                                </article>
+                                <div class="sub-news">
+                                    <ul class="list-sub">
+                                        <li>
+                                            <div class="list-container">
+                                                <img src="./img/halland.jpg" alt="halland">
+                                                <h3 class="justify">Rangnick: 'Man Utd cần cầu thủ như Halland'</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-container">
+                                                <img src="./img/pep-klopp.jpg" alt="pep-klopp">
+                                                <h3 class="justify">Guardiola: 'Klopp ở lại Liverpool tốt cho Ngoại hạng Anh'</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-container">
+                                                <img src="./img/koeman-barca.jpg" alt="koeman-barca">
+                                                <h3 class="justify">Koeman: 'Barca thua Real số điểm gần gấp đôi lúc sa thải tôi'</h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <aside class="col-right">
+                                <div class="fifa-rank">
+                                    <table>
+                                        <caption>BXH FIFA T4-2022</caption>
+    
+                                        <thead>
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Country</th>
+                                                <th>Point</th>
+                                                <th>+/-</th>
+                                            </tr>
+                                        </thead>
+    
+                                        <tbody class="tb-center">
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <img src="./img/brazil.jpg" alt="brazil" class="flag">
+                                                    <span>Brazil</span>
+                                                </td>
+                                                <td>1832.69</td>
+                                                <td>9.27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <img src="./img/belgium.jpg" alt="belgium" class="flag">
+                                                    <span>Belgium</span>
+                                                </td>
+                                                <td>1827</td>
+                                                <td>-1.45</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <img src="./img/france.jpg" alt="france" class="flag">
+                                                    <span>France</span> 
+                                                </td>
+                                                <td>1789.85</td>
+                                                <td>3.70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="column">
+                                                    <img src="./img/argentina.jpg" alt="argentina" class="flag">
+                                                    <span>Argentina</span> 
+                                                </td>
+                                                <td>1765.13</td>
+                                                <td>-1.86</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <img src="./img/england.jpg" alt="england" class="flag">
+                                                    <span>England</span> 
+                                                </td>
+                                                <td>1761.71</td>
+                                                <td>6.19</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="center-tb">...</td>
+                                            </tr>
+                                            <tr>
+                                                <td>96</td>
+                                                <td>
+                                                    <img src="./img/vietnam.jpg" alt="vietnam" class="flag">
+                                                    <span>Vietnam</span>
+                                                </td>
+                                                <td>1215.38</td>
+                                                <td>-3.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="center-tb">...</td>
+                                            </tr>
+                                            <tr>
+                                                <td>111</td>
+                                                <td>
+                                                    <img src="./img/thailand.jpg" alt="thailand" class="flag">
+                                                    <span>Thailand</span>
+                                                </td>
+                                                <td>1167.68</td>
+                                                <td>7.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="center-tb">...</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </aside>
+                        </div>
+                    </section>
+    
+                    <div class="line">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                    </div>
+                    <section class="down-story">
+                        <a href="#" title="News">News</a>
+                        <div class="content-news">
+                            <div class="news-first">
+                                <div class="image">
+                                    <img src="./img/BoNgoaiGiao.jpg" alt="BoNgoaiGiao">
+                                </div>
+                                <div class="text">
+                                    <h3 class="justify">Vietnam slams China’s East Sea fishing ban as sovereignty violation</h3>
+                                </div>
+                            </div>
+    
+                            <div class="sub-news">
+                                <ul class="list-sub">
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/sontungmtp.jpg" alt="sontungmtp">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Vietnamese pop star’s first English MV deemed negative, faces removal</h3>
+                                                <p>Son Tung M-TP’s first English MV, which depicts an orphan losing his way in 
+                                                    life and committing suicide, has attracted censure and a demand for its 
+                                                    removal from popular platforms.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/covidevaccine.jpg" alt="covidevaccine">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Fourth Covid vaccine shot four months after third: health ministry</h3>
+                                                <p>The vaccine usage advisory council under the health ministry has proposed 
+                                                    that the fourth Covid-19 vaccine shot be taken at least four months after from the third one.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/Hanoivilla.jpg" alt="Hanoivilla">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Hanoi revives century-old French-built villa</h3>
+                                                <p>A colonial villa built in the early 20th century in downtown Hanoi by the 
+                                                    French is under renovation using original French methods.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/recordCovid.jpg" alt="recordCovid">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Vietnam records 6,068 new Covid-19 cases</h3>
+                                                <p>Health authorities Friday confirmed 6,068 Covid-19 cases and one death – the lowest since June last year.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear-fix"></div>
+                        </div>
+                    </section>
+    
+                    <div class="line">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                    </div>
+                    <section class="down-story">
+                        <a href="#" title="Life">Life</a>
+                        <div class="content-news">
+                            <div class="news-first news-life">
+                                <h2>Slovakian Vietnamese earns kudos for standing up to racism</h2>
+                                <p class="p-life justify">Claudia Tran has been recognized for her continuing efforts to 
+                                    fight racial profiling and discrimination by being named in Slovakia's Forbes 30 under 30.</p>
+                            </div>
+    
+                            <div class="sub-news">
+                                <ul class="list-sub">
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/trafficHN.jpg" alt="trafficHN">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Traffic chaos returns to engulf Hanoi</h3>
+                                                <p>Roads have suffered consistent congestion not only during rush hour but 
+                                                    throughout the day as Hanoi adjusts to a "new normal" following the Covid-19 pandemic.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/jpnoodle.jpg" alt="jpnoodle">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Japanese city puts Vietnam beef noodle soup on school menu</h3>
+                                                <p>The Japanese city of Saijo served school students Hue-style beef noodle 
+                                                    soup for lunch this week as part of efforts to deepen their understanding of Vietnam.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/ceo.jpg" alt="ceo">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Offering students choices, a top education strategy: Ivy Global School CEO</h3>
+                                                <p>Choice in education includes everything from choice provided to students 
+                                                    in the classroom to education models and school choice, Kyle Konold, Principal of Ivy Global School, said.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="justify">
+                                        <div class="list-container">
+                                            <div class="image">
+                                                <img src="./img/laita.png" alt="laita">
+                                            </div>
+                                            <div class="text">
+                                                <h3>LAITA studio launches first commercial collection</h3>
+                                                <p>The studio's first commercial collection consists of a variety of accessories, stationery and other home items.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+    
+            <!-- =================== FOOTER ===================== -->
+            <footer>
+                <div class="footer width-900">
+                    <div class="container-footer">
+                        <div class="col-menu-footer">
+                            <a href="#" title="News">News</a>
+                            <a href="#" title="Travel">Travel</a>
+                            <a href="#" title="Life">Life</a>
+                            <a href="#" title="Sports">Sports</a>
+                            <a href="#" title="Perspectives">Perspectives</a>
+                        </div>
+        
+                        <div class="col-menu-footer col-menu-ft-right">
+                            <div class="contact justify">
+                                <a href="#" title="Contact">Contact us</a>
+                                <span>Get Newsletter</span>
+                                <span>Advertise with us: <br>090 293 9644</span>
+                            </div>
+                            <div class="download">
+                                <a href="#" title="Download">Download App</a>
+                                <span>International</span>
+                                <div class="app">
+                                    <div class="phone-app">
+                                        <img src="./img/apple_app.png" alt="apple_app" class="apple-app">
+                                        <img src="./img/android_app.png" alt="android_app" class="android-app">
+                                    </div>
+                                    <img src="./img/qr_app_review.png" alt="qr_app_review" class="qr-code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-footer width-900">
+                    <div class="col-left-ft font-10">
+                        <p>Subsidiary of VnExpress</p>
+                        <p>License number: 71/GP-CBC, 
+                            Ministry of Information and Communications, September 22, 2021</p>
+                    </div>
+                    <div class="col-right-ft font-10">
+                        <p>© Copyright 1997 VnExpress.net. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Modal Đăng ký-->
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                    <span>Đăng ký tài khoản</span>
+                </header>
+
+                <div class="modal-body">
+                    <label for="username" class="modal-label">
+                        <i class="ti-user"></i>
+                        Tên:
+                    </label>
+                    <input type="text" id="username" name="input" class="modal-input input-user" placeholder="Enter your name">
+                    
+                    <label for="email" class="modal-label">
+                        <i class="ti-email"></i>
+                        Email:
+                    </label>
+                    <input type="email" id="email" name="input" class="modal-input input-email" placeholder="Enter your email">
+
+                    <label for="password" class="modal-label">
+                        <i class="ti-eye"></i>
+                        Mật khẩu:
+                    </label>
+                    <input type="password" id="password" name="input" class="modal-input input-pass" placeholder="Enter your password">
+                </div>
+                
+                <div class="check-password">
+                    <label for="checkpass">
+                        <input type="checkbox" name="checkbox" id="checkpass">
+                        <span> Remember password? </span>
+                    </label>
+                </div>
+                <!-- Button đăng ký có thể thay bằng form submit -->
+                <div class="register">
+                    <button id="register-btn" class="js-register-btn">Đăng ký</button>
+                </div>
+                <div class="log-in">
+                    <span>Bạn đã có tài khoản? &NonBreakingSpace;</span>
+                    <a href="#" title="logIn" target="_blank">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal đăng nhập -->
+        <div class="modal-log-in js-modal-log-in">
+            <div class="modal-container js-modal-container-log-in">
+                <div class="modal-close js-modal-close-log-in">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                    <span>Đăng nhập tài khoản</span>
+                </header>
+
+                <div class="modal-body">                    
+                    <label for="email" class="modal-label">
+                        <i class="ti-email"></i>
+                        Email:
+                    </label>
+                    <input type="email" id="email-log-in" name="input" class="modal-input input-email" placeholder="Enter your email">
+
+                    <label for="password" class="modal-label">
+                        <i class="ti-eye"></i>
+                        Mật khẩu:
+                    </label>
+                    <input type="password" id="password-log-in" name="input" class="modal-input input-pass" placeholder="Enter your password">
+                    <a href="#" title="forgot-pass">Forgot password?</a>
+                    <div class="log-in">
+                        <button id="log-in-btn" class="js-log-in-btn" onclick="checkInfo()">Đăng nhập</button>
+                    </div>
+                    <div class="text-check-user">
+                        <span>Không có tài khoản? <a href="index.html" title="create-account" target="_blank">Tạo tài khoản!</a></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <script src="assets/js/style.js"></script>
+        <script>
+            function realTime(){
+            var realtime = new Date();
+            var hour = realtime.getHours();
+            var min = realtime.getMinutes();
+            var sec = realtime.getSeconds();
+
+            hour = ("0" + hour).slice(-2);
+            min = ("0" + min).slice(-2);
+            sec = ("0" + sec).slice(-2);
+
+            document.getElementById('clock').innerHTML = hour + ":" + min + ":" + sec;
+            var t = setTimeout(realTime,500);
+        }
+        </script>
+    </body>
+</html>
